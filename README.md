@@ -1,180 +1,138 @@
-LAB 1
+AB 1
 
 Linux commands workflow:
 
-narayan@Asus:~$ pwd
-/home/narayan
-
-narayan@Asus:~$ mkdir StudentLab
-narayan@Asus:~/Sem1/Programming$ cd StudentLab/
-narayan@Asus:~/Sem1/Programming/StudentLab$ mkdir Programs Assignments Notes
-narayan@Asus:~/Sem1/Programming/StudentLab$ ls
+➜ StudentLab git:(main) mkdir Programs Assignments Notes
+➜ StudentLab git:(main) ls
 Assignments Notes Programs
-narayan@Asus:~/Sem1/Programming/StudentLab$ pwd
-/home/narayan/Sem1/Programming/StudentLab
+➜ StudentLab git:(main) pwd
+/home/.../StudentLab
+➜ StudentLab git:(main) cd Assignments
+➜ Assignments git:(main) touch assignment1.txt
+➜ Assignments git:(main) touch assignment2.txt
+➜ Assignments git:(main) touch assignment3.txt
+➜ Assignments git:(main) ls
+assignment1.txt assignment2.txt assignment3.txt
+➜ Assignments git:(main) mv assignment3.txt lab3.txt
+➜ Assignments git:(main) ls
+assignment1.txt assignment2.txt lab3.txt
+➜ Assignments git:(main) rm assignment2.txt
+➜ Assignments git:(main) ls
+assignment1.txt lab3.txt
+➜ Assignments git:(main) touch profile.txt
+➜ Assignments git:(main) nano profile.txt
+➜ Assignments git:(main) cat profile.txt
+Name: Student
+Enrollment Number: 202612074
+Department: MSc IT
+Favourite Programming Language: C++
 
-narayan@Asus:~/Sem1/Programming/StudentLab$ cd Assignments/
-narayan@Asus:~/Sem1/Programming/StudentLab/Assignments$ touch assignment1.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Assignments$ touch assignment2.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Assignments$ touch assignment3.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Assignments$ ls
-assignment1.txt  assignment2.txt  assignment3.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Assignments$ mv assignment3.txt lab3.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Assignments$ ls
-assignment1.txt  assignment2.txt  lab3.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Assignments$ rm assignment2.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Assignments$ ls
-assignment1.txt  lab3.txt
-
-narayan@Asus:~/Sem1/Programming/StudentLab$ ls
-Assignments Notes Programs
-narayan@Asus:~/Sem1/Programming/StudentLab$ cd Notes/
-narayan@Asus:~/Sem1/Programming/StudentLab/Notes$ nano profile.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Notes$ cat profile.txt
-hello there, this is demo text.
-
-narayan@Asus:~/Sem1/Programming/StudentLab/Notes$ touch report.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Notes$ nano report.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Notes$ cat report.txt
-hello this is demo report.
-narayan@Asus:~/Sem1/Programming/StudentLab/Notes$ cp report.txt report_backup.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Notes$ cat report_backup.txt
+➜ Assignments git:(main) touch report.txt
+➜ Assignments git:(main) cp report.txt report_backup.txt
+➜ Assignments git:(main) nano report_backup.txt
+➜ Assignments git:(main) cat report.txt
+➜ Assignments git:(main) cat report_backup.txt
 hello this is demo report.
 
-narayan@Asus:~/Sem1/Programming/StudentLab$ mkdir LinuxLab
-narayan@Asus:~/Sem1/Programming/StudentLab$ cd LinuxLab/
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab$ mkdir C C++ Python Java
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab$ cd C
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab/C$ touch program1.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab/C$ cd ..
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab$ cd C++/
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab/C++$ touch program1.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab/C++$ cd ..
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab$ cd Python/
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab/Python$ touch program1.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab/Python$ cd ..
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab$ cd Java/
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab/Java$ touch program1.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab/Java$ cd ..
-narayan@Asus:~/Sem1/Programming/StudentLab/LinuxLab$ ls
-C  C++  Java  Python
+➜ Assignments git:(main) mkdir LinuxLab
+➜ Assignments git:(main) cd LinuxLab
+➜ LinuxLab git:(main) mkdir C C++ Python Java
+➜ LinuxLab git:(main) cd C
+➜ C git:(main) touch program1.txt
+➜ C git:(main) cd ..
+➜ LinuxLab git:(main) cd C++
+➜ C++ git:(main) touch program1.txt
+➜ C++ git:(main) cd ..
+➜ LinuxLab git:(main) cd Python
+➜ Python git:(main) touch program1.txt
+➜ Python git:(main) cd ..
+➜ LinuxLab git:(main) cd Java
+➜ Java git:(main) touch program1.txt
+➜ Java git:(main) cd ..
+➜ LinuxLab git:(main) ls
+C C++ Java Python
 
-narayan@Asus:~/Sem1/Programming/StudentLab$ mkdir Projects
-narayan@Asus:~/Sem1/Programming/StudentLab$ cd Projects/
-narayan@Asus:~/Sem1/Programming/StudentLab/Projects$ mkdir AI ML DL
-narayan@Asus:~/Sem1/Programming/StudentLab/Projects$ rmdir ML
-narayan@Asus:~/Sem1/Programming/StudentLab/Projects$ ls
-AI DL ML
-narayan@Asus:~/Sem1/Programming/StudentLab/Projects$ mv DL DeepLearning
-narayan@Asus:~/Sem1/Programming/StudentLab/Projects$ ls
+➜ LinuxLab git:(main) cd ..
+➜ Assignments git:(main) mkdir Projects
+➜ Assignments git:(main) cd Projects
+➜ Projects git:(main) mkdir AI ML DL
+➜ Projects git:(main) rmdir ML
+➜ Projects git:(main) mv DL DeepLearning
+➜ Projects git:(main) ls
 AI DeepLearning
 
-narayan@Asus:~/Sem1/Programming/StudentLab/Projects$ cd ..
-narayan@Asus:~/Sem1/Programming/StudentLab$ cd Programs/
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs$ nano Palindrome.cpp
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs$ g++ -o output Palindrome.cpp
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs$ ./output
-
+➜ Projects git:(main) cd ..
+➜ Assignments git:(main) nano isPalindrome.cpp
+➜ Assignments git:(main) g++ isPalindrome.cpp -0 isPalindrome
+g++: error: unrecognized command-line option ‘-0’
+➜ Assignments git:(main) g++ isPalindrome.cpp -o isPalindrome
+➜ Assignments git:(main) ./isPalindrome
 Enter a string: 121
 Palindrome
-
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs$ ./output
+➜ Assignments git:(main) ./isPalindrome
 Enter a string: 122
 Not Palindrome
 
-narayan@Asus:~/Sem1/Programming/StudentLab$ mkdir GitPractice
-narayan@Asus:~/Sem1/Programming/StudentLab$ cd GitPractice/
-narayan@Asus:~/Sem1/Programming/StudentLab/GitPractice$ git init
-
-Initialized empty Git repository in /home/narayan/Sem1/Programming/StudentLab/GitPractice/.git/
-
-narayan@Asus:~/Sem1/Programming/StudentLab/GitPractice$ touch readme.md
-narayan@Asus:~/Sem1/Programming/StudentLab/GitPractice$ git add readme.md
-narayan@Asus:~/Sem1/Programming/StudentLab/GitPractice$ git commit -m "First Commit"
-
+➜ Assignments git:(main) cd ..
+➜ StudentLab git:(main) mkdir GitPractice
+➜ StudentLab git:(main) cd GitPractice
+➜ GitPractice git:(main) git init
+Initialized empty Git repository in .../StudentLab/GitPractice/.git/
+➜ GitPractice git:(main) touch readme.md
+➜ GitPractice git:(main) git add readme.md
+➜ GitPractice git:(main) git commit -m "First Commit"
 Author identity unknown
-
-*** Please tell me who you are.
-Run
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
-to set your account's default identity.
-
-fatal: empty ident name (for <narayan@Asus.localdomain>) not allowed
-
-narayan@Asus:~/Sem1/Programming/StudentLab/GitPractice$ git config --global user.name "Narayan"
-narayan@Asus:~/Sem1/Programming/StudentLab/GitPractice$ git config --global user.email "narayandarbar73@gmail.com"
-narayan@Asus:~/Sem1/Programming/StudentLab/GitPractice$ git commit -m "First Commit"
-[master (root-commit) b52a3b4] First Commit
+fatal: empty ident name not allowed
+➜ GitPractice git:(main) git config --global user.name "Student"
+➜ GitPractice git:(main) git config --global user.email "student@example.com"
+➜ GitPractice git:(main) git commit -m "First Commit"
+[main (root-commit)] First Commit
 1 file changed, 0 insertions(+), 0 deletions(-)
-create mode 100644 readme.md
-
-narayan@Asus:~/Sem1/Programming/StudentLab/GitPractice$ git status
-On branch master
+➜ GitPractice git:(main) git status
+On branch main
 nothing to commit, working tree clean
-narayan@Asus:~/Sem1/Programming/StudentLab/GitPractice$ git log
-commit b52a3b4d0c8de509ab281e2b58ea3b1914a14958 (HEAD -> master)
-Author: Narayan <narayandarbar73@gmail.com>
-Date:   Wed Aug 12 11:28:22 2026 +0000
+➜ GitPractice git:(main) git log
 
-First Commit
-
-narayan@Asus:~/Sem1/Programming/StudentLab/GitPractice$ 
-
-narayan@Asus:~/Sem1/Programming/StudentLab$ mkdir Library
-narayan@Asus:~/Sem1/Programming/StudentLab$ cd Library/
-narayan@Asus:~/Sem1/Programming/StudentLab/Library$ mkdir Books Notes Assignments
-narayan@Asus:~/Sem1/Programming/StudentLab/Library$ touch Books/booklist.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Library$ touch Notes/notes.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Library$ touch Assignments/assignment.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Library$ cp Books/booklist.txt Notes/
-narayan@Asus:~/Sem1/Programming/StudentLab/Library$ mv Notes/booklist.txt "Notes/library books.txt"
-narayan@Asus:~/Sem1/Programming/StudentLab/Library$ rm Assignments/assignment.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Library$ cd Books/
-narayan@Asus:~/Sem1/Programming/StudentLab/Library/Books$ ls
+➜ GitPractice git:(main) cd ..
+➜ StudentLab git:(main) mkdir Library
+➜ StudentLab git:(main) cd Library
+➜ Library git:(main) mkdir Books Notes Assignments
+➜ Library git:(main) touch Books/booklist.txt
+➜ Library git:(main) touch Notes/notes.txt
+➜ Library git:(main) touch Assignments/assignment.txt
+➜ Library git:(main) cp Books/booklist.txt Notes/
+➜ Library git:(main) mv Notes/booklist.txt "Notes/library books.txt"
+➜ Library git:(main) rm Assignments/assignment.txt
+➜ Library git:(main) cd Books
+➜ Books git:(main) ls
 booklist.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Library/Books$ cd ..
-narayan@Asus:~/Sem1/Programming/StudentLab/Library$ cd Notes/
-narayan@Asus:~/Sem1/Programming/StudentLab/Library/Notes$ ls
-library books.txt  notes.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Library/Notes$ cd ..
-narayan@Asus:~/Sem1/Programming/StudentLab/Library$ cd Assignments/
-narayan@Asus:~/Sem1/Programming/StudentLab/Library/Assignments$ ls
+➜ Books git:(main) cd ../Notes
+➜ Notes git:(main) ls
+library books.txt notes.txt
+➜ Notes git:(main) cd ../Assignments
+➜ Assignments git:(main) ls
 
-narayan@Asus:~/Sem1/Programming/StudentLab/Library/Assignments$ 
-
-narayan@Asus:~/Sem1/Programming/StudentLab$ cd Programs/
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs$ mkdir Student
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs$ cd Student/
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ mkdir Documents
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ mkdir Documents/Backup
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ mkdir Programs
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ ls
+➜ Assignments git:(main) cd ../..
+➜ StudentLab git:(main) mkdir Student
+➜ StudentLab git:(main) cd Student
+➜ Student git:(main) mkdir Programs Documents
+➜ Student git:(main) mkdir Documents/Backup
+➜ Student git:(main) touch Programs/cpp.cpp
+➜ Student git:(main) touch Programs/python.py
+➜ Student git:(main) touch Documents/resume.txt
+➜ Student git:(main) nano Documents/resume.txt
+➜ Student git:(main) cp Documents/resume.txt Documents/Backup/
+➜ Student git:(main) mv Documents/Backup/resume.txt "Documents/Backup/resume backup.txt"
+➜ Student git:(main) ls
 Documents Programs
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ touch Programs/cpp.cpp
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ touch Programs/python.py
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ touch Documents/resume.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ nano Documents/resume.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ cp Documents/resume.txt Documents/Backup/
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ mv Documents/Backup/resume.txt "Documents/Backup/resume backup.txt"
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ ls
-Documents Programs
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ cd Documents/
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student/Documents$ ls
+➜ Student git:(main) cd Documents
+➜ Documents git:(main) ls
 Backup resume.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student/Documents$ cd Backup/
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student/Documents/Backup$ ls
+➜ Documents git:(main) cd Backup
+➜ Backup git:(main) ls
 resume backup.txt
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student/Documents/Backup$ cd ..
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student/Documents$ cd ..
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ cd Programs/
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student/Programs$ ls
-cpp.cpp  python.py
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student/Programs$ cd ..
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ ls
+➜ Backup git:(main) cd ../..
+➜ Student git:(main) ls
 Documents Programs
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$ pwd
-/home/narayan/Sem1/Programming/StudentLab/Programs/Student
-narayan@Asus:~/Sem1/Programming/StudentLab/Programs/Student$
+➜ Student git:(main) pwd
+/home/.../StudentLab/Student
