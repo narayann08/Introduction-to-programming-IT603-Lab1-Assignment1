@@ -1,7 +1,8 @@
-AB 1
+# LAB 1
 
-Linux commands workflow:
+**Linux commands workflow:**
 
+```text
 ➜ StudentLab git:(main) mkdir Programs Assignments Notes
 ➜ StudentLab git:(main) ls
 Assignments Notes Programs
@@ -136,3 +137,4 @@ resume backup.txt
 Documents Programs
 ➜ Student git:(main) pwd
 /home/.../StudentLab/Student
+```
